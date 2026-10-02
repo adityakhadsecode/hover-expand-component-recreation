@@ -4,9 +4,18 @@
 
 ---
 
+## 🎬 Preview
+
+https://github.com/user-attachments/assets/preview.mp4
+
+<video src="./preview.mp4" controls width="100%"></video>
+
+---
+
 ## 📁 Project Structure
 
 ```
+├── preview.mp4                       # 1080p demo showcase video
 ├── public/
 │   └── images/                       # Showcase illustration assets
 ├── src/
