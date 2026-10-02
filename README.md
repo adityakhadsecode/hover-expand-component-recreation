@@ -6,16 +6,15 @@
 
 ## 🎬 Preview
 
-https://github.com/user-attachments/assets/preview.mp4
-
-<video src="./preview.mp4" controls width="100%"></video>
+![Hover Expand Preview](./preview.gif)
 
 ---
 
 ## 📁 Project Structure
 
 ```
-├── preview.mp4                       # 1080p demo showcase video
+├── preview.gif                       # Inline playable demo showcase
+├── preview.mp4                       # Full 1080p video demo
 ├── public/
 │   └── images/                       # Showcase illustration assets
 ├── src/
