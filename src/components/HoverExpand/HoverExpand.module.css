@@ -1,0 +1,103 @@
+/* CSS Module for HoverExpand */
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #121212;
+  color: #F1F1F1;
+}
+
+.overflowWrap {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .overflowWrap {
+    height: 100%;
+  }
+}
+
+.track {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .track {
+    height: 100%;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .track {
+    min-width: 1600px;
+  }
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  border-width: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 768px) {
+  .card {
+    border-bottom: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+.labelWrap {
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  left: 2vw;
+  z-index: 10;
+  display: flex;
+  width: calc(100vh - 2.6vw);
+  transform-origin: 0 50%;
+  justify-content: space-between;
+  padding-right: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2.6vw;
+  letter-spacing: -0.03em;
+}
+
+@media (min-width: 768px) {
+  .labelWrap {
+    transform: rotate(-90deg);
+    font-size: 2vw;
+  }
+}
+
+.imageWrap {
+  height: 92%;
+  border-radius: 0.6vw;
+  object-fit: cover;
+  padding-left: 0.5rem;
+  padding-right: 1.3vw;
+  padding-top: 1.3vw;
+}
+
+@media (min-width: 768px) {
+  .imageWrap {
+    height: 100%;
+    padding-bottom: 1.3vw;
+    padding-left: 4vw;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  object-fit: cover;
+  display: block;
+}
